@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+} 
+<style>
+	table {
+		border-collapse: separate;
+		border: solid #dee2e6 1px;
+		width: 500px;
+		height: 150px;
+		text-align: left;
+	}
+
+	td:first-child, th:first-child {
+		border-left: none;
+		vertical-align: top;
+	}
+</style>
+<form method="post">
+	<h2 style="font-weight:normal;">technologyone</h2>
+	<h1>Numeric Converter</h1>
+    <div class="form-group">
+        <label style="font-size:16px;" for="Amount">Enter the amount in dollars:</label>
+		<br />
+		<input type="text" style="height:25px;width:15px;text-align: right;border-radius: 15px 0px 0px 15px;border: solid #dee2e6 1px;padding:0px;font-size:20px;" placeholder="$" id="DollarSign" disabled>
+		<input type="number" placeholder="$0.00" style="height:25px;width:150px;text-align: right;border-radius: 0px 15px 15px 0px;border: solid #dee2e6 1px;font-size:20px;" text-align="right" min="0.00" step="0.01" id="Amount" name="Amount" value="@Model.Amount" />
+    </div>
+	<p></p>
+    <button type="submit" class="btn btn-primary">Convert</button>
+	<p></p>
+	<img></img>
+</form>
+
+@if (Model.Outcome != null)
+{
+	<h3>Number (text)</h3>	
+	<table>
+		<tr>
+			<th>@Model.Outcome</th>
+	</table>
+}
+
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+		<p>@Model.ErrorMessage</p>
+	</div>
+}
