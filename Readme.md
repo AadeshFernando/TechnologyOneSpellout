@@ -1,4 +1,5 @@
 technologyone
+
 Numeric Converter Application:
 This is a simple ASP.NET Core Razor Pages application that converts numeric dollar amounts into their text representations (e.g., $123.45 becomes "ONE HUNDRED TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS").
 
