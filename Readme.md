@@ -5,14 +5,17 @@ This is a simple ASP.NET Core Razor Pages application that converts numeric doll
 
 Prerequisites:
 Before you begin, ensure you have the following installed on your system:
+
 .NET 9.0 or later
 
 Download and install from Microsoft's .NET website.
    
 Integrated Development Environment (IDE):
-   Recommended: Visual Studio 2022 (with the ASP.NET and web development workload).
+
+Recommended: Visual Studio 2022 (with the ASP.NET and web development workload).
 
 Git (optional, if cloning from a repository):
+
    Download and install from Git's website.
 
 Building the Solution:
