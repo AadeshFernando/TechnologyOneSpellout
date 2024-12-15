@@ -6,7 +6,7 @@ Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
 
-.NET 6.0 SDK or later
+.NET 9.0 or later
 
 Download and install from Microsoft's .NET website.
 
